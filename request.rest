@@ -1,0 +1,24 @@
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/1
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+  "name": "Sepatu super",
+  "description": "Ini adalah sepatu super yang sangat nyaman",
+  "price": 19.99
+}
+
+###
+PATCH  http://localhost:5000/products/2
+Content-Type: application/json
+
+{
+  "name": "Sepatu basket",
+  "description": "Ini adalah sepatu basket yang sangat nyaman dan sudah diupdate",
+  "price": 22.4
+}
